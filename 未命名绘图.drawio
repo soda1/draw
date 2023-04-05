@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T16:41:21.194Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="kU_zoNyr7Z98UZX9-wHI" version="21.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-05T16:56:09.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="_D8kWX0-rvcxQuvqHARc" version="21.1.4" type="github">
   <diagram name="第 1 页" id="eTMIK-yxz0oG1RzC4DZo">
-    <mxGraphModel dx="1050" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1290" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,8 +31,89 @@
         <mxCell id="GX8XgOmjSFiRay3oRI_W-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="360" y="130" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GX8XgOmjSFiRay3oRI_W-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="250" width="120" height="60" as="geometry" />
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="ehrw4uMkB_tpv9Q5duar-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="340" />
+              <mxPoint x="520" y="340" />
+              <mxPoint x="520" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-10" value="postProcessBeforeInstantiation ，返回false将跳过属性填充步骤" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ehrw4uMkB_tpv9Q5duar-7">
+          <mxGeometry x="-0.0966" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-1" value="InstantiationAwareBeanPostProcessor，典型的可以自己生成代理吧返回吧" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="265" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-2" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="265" as="sourcePoint" />
+            <mxPoint x="410" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="240" />
+              <mxPoint x="790" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-12" value="postProcessBeforeInstantiation，可以生成代理直接返回" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ehrw4uMkB_tpv9Q5duar-2">
+          <mxGeometry x="0.1333" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ehrw4uMkB_tpv9Q5duar-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-13" value="执行Aware资源接口，用于获取资源，比如bean的名称，bean的工厂对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="460" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-15" value="BeanPostProcessor,可以 在初始化前和后对实例进行修改" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="645" y="545" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-18" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="827" y="545" as="sourcePoint" />
+            <mxPoint x="410" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="827" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-20" value="postProcessBeforeInitialization" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ehrw4uMkB_tpv9Q5duar-18">
+          <mxGeometry x="0.2774" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-19" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.551;exitY=1.189;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ehrw4uMkB_tpv9Q5duar-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="660" as="sourcePoint" />
+            <mxPoint x="420" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="750" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-21" value="postProcessAfterInitialization" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ehrw4uMkB_tpv9Q5duar-19">
+          <mxGeometry x="0.0317" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ehrw4uMkB_tpv9Q5duar-22" target="GX8XgOmjSFiRay3oRI_W-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-22" value="执行初始化方法，比如实现InitializingBean接口，&lt;br&gt;或使用注解@PostConstruct标注为初始方法的" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="540" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ehrw4uMkB_tpv9Q5duar-24" target="GX8XgOmjSFiRay3oRI_W-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ehrw4uMkB_tpv9Q5duar-24" value="执行销毁方法，比如Bean实现DisposableBean接口&lt;br&gt;或使用@PreDestroy在方法上注解" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="680" width="290" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
