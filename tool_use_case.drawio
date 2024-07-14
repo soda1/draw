@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2024-07-14T07:14:37.225Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.5.5" etag="uDXBQbCCBmhVverI8LdZ" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-14T07:37:08.276Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="D5T7X5daOAl_1mijNNc0" version="24.6.5" type="github">
   <diagram name="Page-1" id="piCZtO-26Py5zePVwWeR">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="1658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-1" value="user&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="90" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-2" value="新增设备信息" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="-10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-3" value="编辑设备信息" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-4" value="删除设备信息" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MWVJ1f_NghS_9OLPC1m6-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="100" as="sourcePoint" />
+            <mxPoint x="330" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MWVJ1f_NghS_9OLPC1m6-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="220" as="sourcePoint" />
+            <mxPoint x="320" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.054;entryY=0.331;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MWVJ1f_NghS_9OLPC1m6-1" target="MWVJ1f_NghS_9OLPC1m6-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="260" as="sourcePoint" />
+            <mxPoint x="290" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-8" value="借用设备" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-9" value="归还设备" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-12" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.029;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="MWVJ1f_NghS_9OLPC1m6-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="425" y="430" as="sourcePoint" />
+            <mxPoint x="585" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MWVJ1f_NghS_9OLPC1m6-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MWVJ1f_NghS_9OLPC1m6-1" target="MWVJ1f_NghS_9OLPC1m6-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="370" as="sourcePoint" />
+            <mxPoint x="190" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
